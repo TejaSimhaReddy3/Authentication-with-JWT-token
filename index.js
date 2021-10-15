@@ -41,7 +41,7 @@ app.get("/books/", async (request, response) => {
     response.status(401);
     response.send("Invalid access token");
   } else {
-    jwt.verify(jwtToken, jdsasfwe, async (error, user) => {
+    jwt.verify(jwtToken, "jdsasfwe", async (error, user) => {
       if (error) {
         response.status(401);
         response.send("Invalid access Token");
